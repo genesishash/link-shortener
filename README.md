@@ -1,8 +1,10 @@
 <p align="center">
-  <img src="https://taky.s3.amazonaws.com/71pixzi8dsgq.svg" width="120">
+  <img src="https://taky.s3.amazonaws.com/71pixzi8dsgq.svg" width="75">
 </p>
 
 `link-shortener` is a quick api url shortener. it will pass/merge query strings and has basic reports as well.
+
+---
 
 ### create link
 ```
