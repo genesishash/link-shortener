@@ -22,6 +22,10 @@ EventsSchema = new Schema {
 
 EventsSchema.plugin models.base
 
+EventsSchema.pre 'save', (next) ->
+  trk.record @toJSON(), -> 1
+  return next()
+
 ##
 model = mongoose.model 'Events', EventsSchema
 

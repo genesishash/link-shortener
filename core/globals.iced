@@ -46,6 +46,27 @@ if conf.redis
     log.info "GLOBALS", "Connecting Redis (#{conf.redis})"
   root.redis = _.redis conf.redis
 
+  Trk = require 'trk'
+
+  root.trk = new Trk({
+    redis: redis
+    key: conf.redis_key
+    map: {
+      bmp: [
+        'ip'
+      ]
+      add: [
+        'event'
+        'event~link'
+      ]
+      addv: []
+      top: []
+    }
+  })
+
+else
+  throw new Error '`conf.redis` required'
+
 if conf.memcached
   if !process.env.SILENCE
     log.info "GLOBALS", "Connecting Memcached (#{conf.memcached})"

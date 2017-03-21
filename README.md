@@ -2,7 +2,9 @@
 `link-shortener` is a quick url shortener with api. it will pass query strings through as well.
 
 ### create link
-`http://localhost:10001/links?method=post&url=http%3A%2F%2Fnationalsolardepartment.com%2Fveteran.html%3Flp%3Dveteran%26note%3DXinyi_CV_Imgtest_Vet_6_TT_2%26sxid%3Da8ngjp37jy5x`
+```
+http://localhost:10001/links?method=post&url=http%3A%2F%2Fnationalsolardepartment.com%2Fveteran.html%3Flp%3Dveteran%26note%3DXinyi_CV_Imgtest_Vet_6_TT_2%26sxid%3Da8ngjp37jy5x
+```
 
 ```js
 {
@@ -28,8 +30,47 @@
 }
 ```
 
-### follow link
-`http://localhost:10001/~21akbzbfcpwi`
+### follow link format
+```
+http://localhost:10001/~21akbzbfcpwi
+```
+
+### stats link format
+```
+http://localhost:10001/+21akbzbfcpwi?days=15
+```
+
+```js
+{
+    "ok": true,
+    "response": {
+        "03/07/2017": {},
+        "03/08/2017": {},
+        "03/09/2017": {},
+        "03/10/2017": {},
+        "03/11/2017": {},
+        "03/12/2017": {},
+        "03/13/2017": {},
+        "03/14/2017": {},
+        "03/15/2017": {},
+        "03/16/2017": {},
+        "03/17/2017": {},
+        "03/18/2017": {},
+        "03/19/2017": {},
+        "03/20/2017": {},
+        "03/21/2017": {
+            "impression": 1
+        }
+    },
+    "_meta": {
+        "path": "/-51akcbr9jaei",
+        "body": {},
+        "query": {},
+        "filter": {},
+        "elapsed": 5
+    }
+}
+```
 
 ---
 
