@@ -1,7 +1,7 @@
 {
-  "name": "mkay",
-  "version": "1.9.1",
-  "description": "a framework based on pragmatism",
+  "name": "link-shortener",
+  "version": "1.0.0",
+  "description": "a quick api url shortener",
   "main": "app.iced",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
