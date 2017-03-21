@@ -56,9 +56,6 @@ app.get '/-:link', (req,res,next) ->
       cur[event] ?= 0
       cur[event] += (+v)
 
-  ll /result/
-  ll result
-
   return res.respond(report)
 
 ##

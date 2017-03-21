@@ -4,10 +4,12 @@ module.exports = conf = {
 
   mongo: 'localhost/link-shortener'
   redis: 'localhost'
+  redis_key: 'link-shortener'
+
   memcached: 'localhost'
 
   cookie_session: {
-    enabled: yes
+    enabled: no
     secret_key: 'MY_UNIQUE_ENCRYPTION_KEY'
   }
 
