@@ -83,8 +83,6 @@ if you don't want people deleting your links
 
 ## based on `mkay`
 
----
-
 <p align="center">
   <img src="https://taky.s3.amazonaws.com/11nckfunnxkm.svg" width="245">
 </p>
