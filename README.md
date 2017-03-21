@@ -81,6 +81,8 @@ http://localhost:10001/+21akbzbfcpwi?days=15
 rest routes are public (`/links`, `/events`), protect those routes
 if you don't want people deleting your links
 
+---
+
 ## based on `mkay`
 
 <p align="center">
