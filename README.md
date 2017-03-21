@@ -1,5 +1,8 @@
-# link-shortener
-`link-shortener` is a quick url shortener with api. it will pass query strings through as well.
+<p align="center">
+  <img src="https://taky.s3.amazonaws.com/71pixzi8dsgq.svg" width="120">
+</p>
+
+`link-shortener` is a quick api url shortener. it will pass/merge query strings and has basic reports as well.
 
 ### create link
 ```
@@ -30,15 +33,19 @@ http://localhost:10001/links?method=post&url=http%3A%2F%2Fnationalsolardepartmen
 }
 ```
 
-### follow link format
+### public redirect
 ```
 http://localhost:10001/~21akbzbfcpwi
 ```
 
-### stats link format
+### public stats link
 ```
 http://localhost:10001/+21akbzbfcpwi?days=15
 ```
+
+### permissions
+rest routes are public (`/links`, `/events`), protect those routes
+if you don't want people deleting your links
 
 ```js
 {
@@ -205,4 +212,26 @@ method and returns the result to the browser
 - `./crons/_create`
 - `./models/_create`
 - `./routes/_create`
+
+---
+
+### License: MIT
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
