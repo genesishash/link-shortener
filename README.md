@@ -45,10 +45,6 @@ http://localhost:10001/~21akbzbfcpwi
 http://localhost:10001/+21akbzbfcpwi?days=15
 ```
 
-### permissions
-rest routes are public (`/links`, `/events`), protect those routes
-if you don't want people deleting your links
-
 ```js
 {
     "ok": true,
@@ -80,6 +76,10 @@ if you don't want people deleting your links
     }
 }
 ```
+
+### permissions
+rest routes are public (`/links`, `/events`), protect those routes
+if you don't want people deleting your links
 
 ---
 
